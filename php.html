@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>php</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="java.css">
+    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+        @font-face {
+          font-family: 'Waltograph';
+          src: url('fonts/waltograph.regular.ttf') format('truetype'); /* Update the path */
+          font-weight: normal;
+          font-style: normal;
+        }
+        .navbar .logo {
+          gap: 10px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          margin-top: -15px;
+      }
+      .navbar .logo img {
+          width: 70px;
+          /* border-radius: 50%; */
+      }
+      .navbar .logo h2 {
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.9rem;
+          margin-top: 15px;
+          font-family: 'Waltograph', sans-serif;
+      }
+      </style>
+</head>
+<body onload="checkAuthStatus()">
+    
+  <div class="navigation">
+    <nav class="navbar" id="navbar">
+        <span class="hamburger-btn material-symbols-rounded">menu</span>
+        <a href="#" class="logo">
+            <img src="images/Magic Book  Logo.png" alt="logo">
+            <h2>Skillspire</h2>
+        </a>
+        <ul class="links">
+            <span class="close-btn material-symbols-rounded">close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="home.html">Courses</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+        <button class="login-btn" onclick="showLoginForm()">LOG IN</button>
+        <li id="userDisplay" style="display: none;"><span id="userEmail"></span></li>
+        <button style="padding: 10px 15px 10px 15px;border-radius: 10%;" onclick="signOut()" class="logout-btn">Logout</button>
+    </nav>
+  </div>
+    <!-- </header> -->
+    <div class="java-welcome">
+        <h1 class="java-text">PHP-(Hypertext preprocessor)</h1>
+    </div>
+
+    <!-- java -->
+    <div class="java-container">
+        <h2 class="java">PHP</h2>
+        <ul id="java-ul">
+            <li>PHP is a server-side scripting language, meaning that it is executed on the server, and the results are sent to the client (web browser). This is in contrast to client-side scripting languages like JavaScript, which run in the browser.</li>
+            <li>PHP is open-source software, which means that its source code is freely available for the public to view, use, and modify. This has contributed to its widespread adoption and the development of a large and active community.</li>
+            <li>PHP syntax is similar to C and C++, making it relatively easy for developers who are familiar with these languages to learn and use PHP. Its syntax is also straightforward, which aids in quick development.</li>
+            <li>PHP supports both procedural and object-oriented programming paradigms. Developers can choose the approach that best fits their coding style and the requirements of the project.</li>
+            <li>PHP is well-suited for rapid application development due to its simplicity and ease of use. Developers can quickly build and iterate web applications, making it a popular choice for startups and small to medium-sized projects.</li>
+            <li>PHP includes various security features, and when used correctly, it can help developers build secure web applications. However, developers must follow best practices to mitigate potential security risks.</li>
+        </ul>
+        <h2 class="jobs">Job opportunities</h2>
+        <ul id="java-ul">
+            <li>Web Developer</li>
+            <li>Backend Developer</li>
+            <li>CMS Developer</li>
+            <li>API Developer</li>
+            <li>Frameworks Developer</li>
+        </ul>
+        <h2 class="roadmap">Roadmap</h2>
+      <center> <img src="roadmap images/php roadmap.jpg" id="rd-map" height="550px" width="650px"></center> 
+
+        <h2 class="books">Books</h2>
+        <div class="books-data">
+            <div class="bd">
+                <a href="https://www.rgmcet.edu.in/assets/img/departments/CSE/materials/R15/4-1/PHP.pdf"><img src="https://cdn1.vectorstock.com/i/1000x1000/95/40/php-coding-on-black-vector-15269540.jpg" height="250px" width="250px" id="b1"><br>PHP programming by RGMET</a>
+            </div>
+            <div class="bd">
+               <br> <a href="https://www.lpude.in/SLMs/Master%20of%20Computer%20Applications/Sem_3/DECAP777_WEB_DEVELOPMENT_USING_PHP.pdf"><img src="https://media.wiley.com/product_data/coverImage300/15/11191492/1119149215.jpg" height="250px" width="250px" id="b2"><br>WEb DEvelopment using PHP by LPU</a>
+            </div>
+            <div class="bd">
+               <br> <a href="http://www.hackingwithphp.com/"><img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/m/l/j/php-programming-the-complete-guide-2022-original-imagft57ajncdnry.jpeg?q=20" height="250px" width="250px" id="b3"><br>Practical PHP programming</a>
+            </div>
+        </div>
+        <h2 class="yt">Popular YT cahnnels for PHP</h2>
+        <div class="yt-data">
+            <div class="yd">
+                <a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih"><img src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/c5b9d836dac8.jpg" height="250px" width="250px" id="y1"><br>PHP - Danni Krossing</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR"><img src="https://yt3.googleusercontent.com/ytc/AIf8zZTNiWLD2-Qw1eWFmRJkGBzfI-8oFNmYk5tBnpNurQ=s900-c-k-c0x00ffffff-no-rj" height="250px" width="250px" id="y2"><br>PHP programming - Code with Harry</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/playlist?list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-"><img src="https://yt3.googleusercontent.com/ytc/AIf8zZRpUIlnL2iP5tGbmRf7ar8jd3ztDX452JJmHJdT=s900-c-k-c0x00ffffff-no-rj" height="250px" width="250px" id="y3"><br>PHP - Program with GIO</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>[our website name] is your go-to destination for learning HTML, CSS, JavaScript, and innovative CSS Animations. 
+                Dive into our courses to master web development essentials and creative effects. 
+                Join us in exploring the world of creativity!.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#"style="text-decoration: none;">Web Design, Development</a></div>
+            <div><a href="#"style="text-decoration: none;">Comprehensive Course Catalog</a></div>
+            <div><a href="#"style="text-decoration: none;">Interactive Learning Modules</a></div>
+            <div><a href="#"style="text-decoration: none;">Career Development Services</a></div>
+            <div><a href="#"style="text-decoration: none;">Personalized Learning Paths</a></div>
+            <div><a href="#"style="text-decoration: none;">Emerging Technologies Exploration</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Skillspire</a> All rights reserved</p>
+        </div>
+      </footer>
+               <!-- Login-->
+               <div class="blur-bg-overlay"></div>
+               <div class="form-popup">
+                   <span class="close-btn material-symbols-rounded">close</span>
+                   <div class="form-box login">
+                       <div class="form-details">
+                           <h2>Welcome Back</h2>
+                           <p>Please log in using your personal information to stay connected with us.</p>
+                       </div>
+                       <div class="form-content">
+                           <h2>LOGIN</h2>
+                           <form action="#" id="sign_form">
+                               <div class="input-field">
+                                   <input type="email" id="email" required>
+                                   <label>Email</label>
+                               </div>
+                               <div class="input-field">
+                                   <input type="password" id="password" required>
+                                   <label>Password</label>
+                               </div>
+                               <a href="#" class="forgot-pass-link">Forgot password?</a>
+                               <button style="height: 40px;"  onclick="login(event)">Log In</button>
+                           </form>
+                           <div class="bottom-link">
+                               Don't have an account?
+                               <a href="#" id="signup-link">Signup</a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-box signup">
+                       <div class="form-details">
+                           <h2>Create Account</h2>
+                           <p>To become a part of our community, please sign up using your personal information.</p>
+                       </div>
+                       <div class="form-content">
+                           <h2>SIGNUP</h2>
+                           <form action="#" id="login_form">
+                               <div class="input-field">
+                                   <input type="email" id="sign_email" required>
+                                   <label>Enter your email</label>
+                               </div>
+                               <div class="input-field">
+                                   <input type="password" id="sign_password" required>
+                                   <label>Create password</label>
+                               </div>
+                               <div class="policy-text">
+                                   <input type="checkbox" id="checkbox" id="policy">
+                                   <label for="policy">
+                                       I agree the
+                                       <a href="#" class="option">Terms & Conditions</a>
+                                   </label>
+                               </div>
+                               <button  onclick="register(event)">Sign Up</button>
+                           </form>
+                           <div class="bottom-link">
+                               Already have an account? 
+                               <a href="#" id="login-link">Login</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+                 <!-- <script src="home.js"></script> -->
+                 <script src="login_signup.js"></script>

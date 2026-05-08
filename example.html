@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login & Signup Form | CodingNepal</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="example.css">
+    <!-- <script src="home.js" defer></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="logo">
+                <h2>CodingNepal</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <!-- <li><a href="#">Courses</a></li> -->
+                <li class="dropcourses">
+                    <a href="#"><button onclick="mydropcourses()" id="drop-btn">Courses</button></a>
+                    <div  id="myDropcourses" class="dropdown-courses">
+                        <a href="#course1">Course 1</a>
+                        <a href="#course2">Course 2</a>
+                        <a href="#course3">Course 3</a>
+                    </div>
+                </li>
+
+
+                <li><a href="#">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" id="login-btn"><i class="ri-user-line nav__login" id="login-btn"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#profile">Profile</a>
+                    <a href="#rank">Rank</a>
+                    <a href="#corses">Courses</a>
+                    <a href="#logout">Logout</a>
+                </div>
+                </div>
+        </nav>
+        
+    </header>
+    
+<!-- Inside the body tag -->
+<section class="courses">
+   <div class="head">
+    <h1>Courses</h1>
+   </div>
+<section class="boxes">
+    <div class="box">
+        <img class="image"src="https://www.finoit.com/wp-content/uploads/2022/11/future-of-java-programming-language-768x576.jpg">
+        <h3>Java Programing</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="java.html"><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/Python-01%20%282%29.png?itok=TEVIQBQo">
+        <h3>Python Programing</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="python.html"><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fq8m7vvl3kilK9DKaKjMp7ahXzoywZpw04N91CPcw2LqIrOQkuYnWkea3g&s">
+        <h3>C Programing</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href=""><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://www.shutterstock.com/image-illustration/c-code-on-dark-background-600nw-1896170293.jpg">
+        <h3>C++ Programing</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="c++.html"><button>Explore</button></a>    
+    </div>
+    </section>
+    <section class="boxes">
+    <div class="box">
+        <img class="image"src="https://img.freepik.com/premium-vector/gradient-sql-illustration_52683-80408.jpg">
+        <h3>Structure Query Language</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="sql.html"><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HVNHQmF6XqXS0xqpvfcJFY3cQIAQEB3XmJ_edOZdMQ&s">
+        <h3>Hyper Text Markup Language</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="Hypertml.html"><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://www.bitdegree.org/learn/storage/media/images/css-tutorial-img1-01.o.png">
+        <h3>Cascading Style Sheets</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="css.html"><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://quintagroup.com/cms/js/js-image/javascript-logo.png">
+        <h3>Javascript</h3><br>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href="Javascript.html"><button>Explore</button></a>
+    </div>
+</section>
+<!-- <section class="boxes">
+    <div class="box">
+        <img class="image"src="https://previews.agefotostock.com/previewimage/medibigoff/1c7b3acec71a598f0213dfda18cc79b2/esy-045112290.jpg">
+        <h3>Hypertext Preprocessor</h3>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href=""><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://externlabs.com/blogs/wp-content/uploads/2021/12/2400%D1%851260-rw-blog-node-js.png">
+        <h3>Nodejs</h3><br>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href=""><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg">
+        <h3>Reactjs</h3><br>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href=""><button>Explore</button></a>
+    </div>
+    <div class="box">
+        <img class="image"src="https://i.pinimg.com/originals/11/0a/de/110ade2eb213377c6995bb9f949caae1.png">
+        <h3>NOSQL</h3><br>
+        <i class="fa fa-signal" style="font-size:24px;color:gray"></i><p class="ba">Beginner to Advance</p>
+        <a href=""><button>Explore</button></a>
+    </div></section> -->
+
+</section>
+<footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">About us</div>
+        <p>[our website name] is your go-to destination for learning HTML, CSS, JavaScript, and innovative CSS Animations. 
+          Dive into our courses to master web development essentials and creative effects. 
+          Join us in exploring the world of creativity!.</p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contact us</div>
+        <div class="phone">
+          <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+        </div>
+        <div class="email">
+          <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="middle box">
+      <div class="topic">Our Services</div>
+      <div><a href="#"style="text-decoration: none;">Web Design, Development</a></div>
+      <div><a href="#"style="text-decoration: none;">Comprehensive Course Catalog</a></div>
+      <div><a href="#"style="text-decoration: none;">Interactive Learning Modules</a></div>
+      <div><a href="#"style="text-decoration: none;">Career Development Services</a></div>
+      <div><a href="#"style="text-decoration: none;">Personalized Learning Paths</a></div>
+      <div><a href="#"style="text-decoration: none;">Emerging Technologies Exploration</a></div>
+    </div>
+    <div class="right box">
+      <div class="topic">Subscribe us</div>
+      <form action="#">
+        <input type="text" placeholder="Enter email address">
+        <input type="submit" name="" value="Send">
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>Copyright © 2020 <a href="#">Our Website</a> All rights reserved</p>
+  </div>
+</footer>
+
+    <!-- <div class="welcome-container">
+        <h1 class="welcome-text">"Welcome to a Journey of Discovery!"</h1>
+        <p class="welcome-note">At [Your Website Name], we believe that learning is a lifelong adventure—an exploration 
+            of new horizons, a journey into the depths of knowledge,
+             and a gateway to endless possibilities.</p>
+    </div> -->
+
+
+    <!-- contact -->
+    <!-- <section id="contact">
+        <div class="container">
+            <div class="matter" data-aos="fade-up" data-aos-delay="100">
+              <h1 style="font-weight: bold; font-size: 30px; text-underline-offset: 9px;">Contact</h1>
+            </div><br><br><br>
+          <div class="form">
+            <div data-aos="fade-up" data-aos-delay="100">
+              <input type="text" class="name" placeholder="Enter your name">
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-delay="200">
+              <input type="email" class="email" placeholder="Enter your email">
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <textarea class="textarea" placeholder="Enter your Message"></textarea>
+            </div>
+            <br>
+            <div >
+              <button class="btn" data-aos="fade-up" data-aos-delay="600">Submit</button>
+            </div>
+        </div>
+        </div>
+      </section>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script> -->
+      <script src="home.js"></script>
+
+   
+</body>
+</html>

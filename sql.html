@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="java.css">
+    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      @font-face {
+        font-family: 'Waltograph';
+        src: url('fonts/waltograph.regular.ttf') format('truetype'); /* Update the path */
+        font-weight: normal;
+        font-style: normal;
+      }
+      .navbar .logo {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-top: -15px;
+    }
+    .navbar .logo img {
+        width: 70px;
+        /* border-radius: 50%; */
+    }
+    .navbar .logo h2 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-top: 15px;
+        font-family: 'Waltograph', sans-serif;
+    }
+    </style>
+</head>
+<body onload="checkAuthStatus()">
+    
+  <div class="navigation">
+    <nav class="navbar" id="navbar">
+        <span class="hamburger-btn material-symbols-rounded">menu</span>
+        <a href="#" class="logo">
+          <img src="images/Magic Book  Logo.png" alt="logo">
+          <h2>Skillspire</h2>
+      </a>
+        <ul class="links">
+            <span class="close-btn material-symbols-rounded">close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="home.html">Courses</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+        <button class="login-btn" onclick="showLoginForm()">LOG IN</button>
+        <li id="userDisplay" style="display: none;"><span id="userEmail"></span></li>
+        <button style="padding: 10px 15px 10px 15px;border-radius: 10%;" onclick="signOut()" class="logout-btn">Logout</button>
+    </nav>
+  </div>
+    <!-- </header> -->
+    <div class="java-welcome">
+        <h1 class="java-text">Sql - (Structured Query Language)</h1>
+    </div>
+
+    <!-- java -->
+    <div class="java-container">
+        <h2 class="java">Sql</h2>
+        <ul id="java-ul">
+            <li>Sql is a Query language.</li>
+            <li>It was developed by Sun Donald D. Chamberlin Raymond F. Boyce and released in 1974.</li>
+            <li>SQL, which stands for Structured Query Language, is a specialized programming language designed for managing and manipulating relational databases. </li>
+            <li>SQL is used to communicate with and manage databases. It allows users to define, manipulate, and control data within a relational database management system (RDBMS).</li>
+            <li>SQL enables users to define, retrieve, update, and manipulate data within databases. </li>
+            <li> The language follows a specific syntax and supports concepts like normalization, transactions, indexes, views, stored procedures, triggers.</li>
+        </ul>
+        <h2 class="jobs">Job opportunities</h2>
+        <ul id="java-ul">
+            <li>Database Administrator (DBA)</li>
+            <li>Data Analyst</li>
+            <li>Data Engineer</li>
+            <li>System Analyst</li>
+            <li>IT Project Manager</li>
+        </ul>
+        <h2 class="roadmap">Roadmap</h2>
+      <center> <img src="roadmap images/sql roadmap.jpeg.jpg" id="rd-map" height="550px" width="650px"></center> 
+
+        <h2 class="books">Books</h2>
+        <div class="books-data">
+            <div class="bd">
+                <a href="https://www.stat.berkeley.edu/~spector/sql.pdf"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4302-0248-6" height="250px" width="250px" id="b1"><br>SqlNotesForProfessionals</a>
+            </div>
+            <div class="bd">
+               <br> <a href="https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2005/express-administrator/bb264565(v=sql.90)?redirectedfrom=MSDN"><img src="https://learnsql.com/blog/sql-books-to-read/sql-books-to-read-5.jpg" height="250px" width="250px" id="b2"><br>Sql by DR.Dannielly</a>
+            </div>
+            <div class="bd">
+               <br> <a href="http://www.r-5.org/files/books/computers/languages/sql/mysql/Alan_Beaulieu-Learning_SQL-EN.pdf"><img src="https://camo.githubusercontent.com/5acc35f164b5cb373a05c99534cb565271518ff59aa2425804137cf7d78df987/68747470733a2f2f696d6775722e636f6d2f41616d43376d332e706e67" height="250px" width="250px" id="b3"><br>SQL Database by Alvin J Alexander</a>
+            </div>
+        </div>
+        <h2 class="yt">Popular YT cahnnels for Sql</h2>
+        <div class="yt-data">
+            <div class="yd">
+                <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA"><img src="https://res.cloudinary.com/codewithmosh/image/upload/v1685118159/images/web-preview.jpg" height="250px" width="250px" id="y1"><br>Programming with Mosh</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY"><img src="https://yt3.googleusercontent.com/ytc/AIf8zZTDkajQxPa4sjDOW-c3er1szXkSAO-H9TiF4-8u_Q=s900-c-k-c0x00ffffff-no-rj" height="250px" width="250px" id="y2"><br>Free code Camp</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/watch?v=q_JsgpiuY98"><img src="https://yt3.googleusercontent.com/o4MZVi2qdNgx0K7vpEl7DT2PefjROdisZTD7is6TMimF1_DTM49O1ld3iQzTpE5MCj86c-vzav8=s900-c-k-c0x00ffffff-no-rj" height="250px" width="250px" id="y3"><br>SQl with Telusko</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>[our website name] is your go-to destination for learning HTML, CSS, JavaScript, and innovative CSS Animations. 
+                Dive into our courses to master web development essentials and creative effects. 
+                Join us in exploring the world of creativity!.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#"style="text-decoration: none;">Web Design, Development</a></div>
+            <div><a href="#"style="text-decoration: none;">Comprehensive Course Catalog</a></div>
+            <div><a href="#"style="text-decoration: none;">Interactive Learning Modules</a></div>
+            <div><a href="#"style="text-decoration: none;">Career Development Services</a></div>
+            <div><a href="#"style="text-decoration: none;">Personalized Learning Paths</a></div>
+            <div><a href="#"style="text-decoration: none;">Emerging Technologies Exploration</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Skillspire</a> All rights reserved</p>
+        </div>
+      </footer>
+           <!-- Login-->
+           <div class="blur-bg-overlay"></div>
+           <div class="form-popup">
+               <span class="close-btn material-symbols-rounded">close</span>
+               <div class="form-box login">
+                   <div class="form-details">
+                       <h2>Welcome Back</h2>
+                       <p>Please log in using your personal information to stay connected with us.</p>
+                   </div>
+                   <div class="form-content">
+                       <h2>LOGIN</h2>
+                       <form action="#" id="sign_form">
+                           <div class="input-field">
+                               <input type="email" id="email" required>
+                               <label>Email</label>
+                           </div>
+                           <div class="input-field">
+                               <input type="password" id="password" required>
+                               <label>Password</label>
+                           </div>
+                           <a href="#" class="forgot-pass-link">Forgot password?</a>
+                           <button style="height: 40px;"  onclick="login(event)">Log In</button>
+                       </form>
+                       <div class="bottom-link">
+                           Don't have an account?
+                           <a href="#" id="signup-link">Signup</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="form-box signup">
+                   <div class="form-details">
+                       <h2>Create Account</h2>
+                       <p>To become a part of our community, please sign up using your personal information.</p>
+                   </div>
+                   <div class="form-content">
+                       <h2>SIGNUP</h2>
+                       <form action="#" id="login_form">
+                           <div class="input-field">
+                               <input type="email" id="sign_email" required>
+                               <label>Enter your email</label>
+                           </div>
+                           <div class="input-field">
+                               <input type="password" id="sign_password" required>
+                               <label>Create password</label>
+                           </div>
+                           <div class="policy-text">
+                               <input type="checkbox" id="checkbox" id="policy">
+                               <label for="policy">
+                                   I agree the
+                                   <a href="#" class="option">Terms & Conditions</a>
+                               </label>
+                           </div>
+                           <button  onclick="register(event)">Sign Up</button>
+                       </form>
+                       <div class="bottom-link">
+                           Already have an account? 
+                           <a href="#" id="login-link">Login</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+             <!-- <script src="home.js"></script> -->
+             <script src="login_signup.js"></script>               

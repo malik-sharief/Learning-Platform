@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="java.css">
+    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      @font-face {
+        font-family: 'Waltograph';
+        src: url('fonts/waltograph.regular.ttf') format('truetype'); /* Update the path */
+        font-weight: normal;
+        font-style: normal;
+      }
+      .navbar .logo {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-top: -15px;
+    }
+    .navbar .logo img {
+        width: 70px;
+        /* border-radius: 50%; */
+    }
+    .navbar .logo h2 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-top: 15px;
+        font-family: 'Waltograph', sans-serif;
+    }
+    </style>
+</head>
+<body onload="checkAuthStatus()">
+    
+  <div class="navigation">
+    <nav class="navbar" id="navbar">
+        <span class="hamburger-btn material-symbols-rounded">menu</span>
+        <a href="#" class="logo">
+          <img src="images/Magic Book  Logo.png" alt="logo">
+          <h2>Skillspire</h2>
+      </a>
+        <ul class="links">
+            <span class="close-btn material-symbols-rounded">close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="home.html">Courses</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+        <button class="login-btn" onclick="showLoginForm()">LOG IN</button>
+        <li id="userDisplay" style="display: none;"><span id="userEmail"></span></li>
+        <button style="padding: 10px 15px 10px 15px;border-radius: 10%;" onclick="signOut()" class="logout-btn">Logout</button>
+    </nav>
+  </div>
+    <!-- </header> -->
+    <div class="java-welcome">
+        <h1 class="java-text">C++ Programming Language</h1>
+    </div>
+
+    <!-- java -->
+    <div class="java-container">
+        <h2 class="java">C++</h2>
+        <ul id="java-ul">
+            <li>C++ is a general-purpose programming language developed by Bjarne Stroustrup at Bell Labs in the early 1980s.</li>
+            <li>It is an extension of the C programming language with additional features such as classes and objects, making it an object-oriented programming (OOP) language.</li>
+            <li>Classes and objects are fundamental concepts in C++, allowing for the creation of modular and reusable code. </li>
+            <li>It supports low-level programming with features like pointers and direct memory manipulation.</li>
+            <li>The STL is a powerful feature of C++ that provides a collection of template classes and functions.</li>
+            <li>C++ allows manual memory management through pointers, but it also supports automatic memory management with features like constructors and destructors.</li>
+            <li>The C++ Standard is maintained by the International Organization for Standardization (ISO), ensuring a standardized and portable language specification.</li>
+            <li>C++ is widely used in various domains, including system/software development, game development, embedded systems, real-time systems, and high-performance computing.</li>
+        </ul>
+        <h2 class="jobs">Job opportunities</h2>
+        <ul id="java-ul">
+            <li>Software Developer/Engineer</li>
+            <li>Game Developer</li>
+            <li>Embedded Systems Developer</li>
+            <li>Graphics Programming</li>
+            <li>Database Systems Developer</li>
+            <li>Security Software Developer</li>
+        </ul>
+        <h2 class="roadmap">Roadmap</h2>
+      <center> <img src="roadmap images/c++ roadmap.jpg" id="rd-map" height="550px" width="650px"></center> 
+
+        <h2 class="books">Books</h2>
+        <div class="books-data">
+            <div class="bd">
+                <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1208/lectures/fundamentals/Lecture_2_Programming_Fundamentals_in_C++.pdf"><img src="https://i.pinimg.com/736x/6a/d3/97/6ad3971db13b0117fcfaab6e070cd0f0.jpg" height="250px" width="250px" id="b1"><br>Programming Fundamentals in C++ by Stanford</a>
+            </div>
+            <div class="bd">
+               <br> <a href="https://www.ddegjust.ac.in/studymaterial/msc-cs/ms-17.pdf"><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4471-3378-0" height="250px" width="250px" id="b2"><br>OOPS using C++ by Pooja Chawla</a>
+            </div>
+            <div class="bd">
+               <br> <a href="https://student.cs.uwaterloo.ca/~cssystem/C++Tutorial.pdf"><img src="https://freecomputerbooks.com/covers/A-Complete-Guide-to-Programming-in-Cpp.jpg" height="250px" width="250px" id="b3"><br>Advanced programming with C++ by A Peter</a>
+            </div>
+        </div>
+        <h2 class="yt">Popular YT cahnnels for C++</h2>
+        <div class="yt-data">
+            <div class="yd">
+                <a href="https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"><img src="data:image/jpeg;base64,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" height="250px" width="250px" id="y1"><br>Cherno C++</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"><img src="https://yt3.googleusercontent.com/ytc/AIf8zZTNiWLD2-Qw1eWFmRJkGBzfI-8oFNmYk5tBnpNurQ=s900-c-k-c0x00ffffff-no-rj" height="250px" width="250px" id="y2"><br>Code with Harry C++</a>
+            </div>
+            <div class="yd">
+               <br> <a href="https://www.youtube.com/playlist?list=PLfVsf4Bjg79Cu5MYkyJ-u4SyQmMhFeC1C"><img src="data:image/png;base64,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" height="250px" width="250px" id="y3"><br>LearningLad C++</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>[our website name] is your go-to destination for learning HTML, CSS, JavaScript, and innovative CSS Animations. 
+                Dive into our courses to master web development essentials and creative effects. 
+                Join us in exploring the world of creativity!.</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#"style="text-decoration: none;">Web Design, Development</a></div>
+            <div><a href="#"style="text-decoration: none;">Comprehensive Course Catalog</a></div>
+            <div><a href="#"style="text-decoration: none;">Interactive Learning Modules</a></div>
+            <div><a href="#"style="text-decoration: none;">Career Development Services</a></div>
+            <div><a href="#"style="text-decoration: none;">Personalized Learning Paths</a></div>
+            <div><a href="#"style="text-decoration: none;">Emerging Technologies Exploration</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Skillspire</a> All rights reserved</p>
+        </div>
+      </footer>
+                <!-- Login-->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#" id="sign_form">
+                    <div class="input-field">
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button style="height: 40px;"  onclick="login(event)">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#" id="login_form">
+                    <div class="input-field">
+                        <input type="email" id="sign_email" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="sign_password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button  onclick="register(event)">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+      <!-- <script src="home.js"></script> -->
+      <script src="login_signup.js"></script>
