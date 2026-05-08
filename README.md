@@ -21,7 +21,7 @@ The Course Catalog Website is designed to provide users with an interactive and 
 ## Installation
 1. Clone the repository:
    
-   git clone https://github.com/SudharshanPaila/Learning-Platform
+   git clone https://github.com/malik-sharief/Learning-Platform.git
    
 2. Navigate to the project directory:
    
